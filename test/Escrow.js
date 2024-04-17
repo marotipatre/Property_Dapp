@@ -22,7 +22,7 @@ describe('Escrow', () => {
         
         [buyer,seller,inspector,lender]= await ethers.getSigners()
         
-
+        // Deply RealEstate
         const RealEstate = await ethers.getContractFactory('RealEstate')
         real = await RealEstate.deploy()
 
